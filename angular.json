@@ -118,6 +118,10 @@
               "devServerTarget": "job-hunting:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

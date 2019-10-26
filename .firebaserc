@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "job-hunting-test": {
+      "hosting": {
+        "job-hunting": [
+          "job-hunting-test"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "job-hunting",
+      "public": "dist/job-hunting",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
