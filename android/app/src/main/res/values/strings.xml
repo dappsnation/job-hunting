@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">job-hunting</string>
+    <string name="title_activity_main">job-hunting</string>
+    <string name="package_name">com.job_hunting.app</string>
+    <string name="custom_url_scheme">com.job_hunting.app</string>
+</resources>

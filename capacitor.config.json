@@ -1,0 +1,8 @@
+{
+  "appId": "com.job_hunting.app",
+  "appName": "job-hunting",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "dist/job-hunting",
+  "cordova": {}
+}
