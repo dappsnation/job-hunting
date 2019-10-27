@@ -1,0 +1,6 @@
+<button (click)="signin()">signin with google</button>
+<div *ngIf="profile$ | async as profile">
+  <img [src]="profile.photoURL"/>
+  <p>Hi, {{ profile.displayName }}</p>
+  <button (click)="signout()">signout</button>
+</div>
