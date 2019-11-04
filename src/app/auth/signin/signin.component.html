@@ -1,4 +1,17 @@
+<form (ngSubmit)="signup()">
+  <label for="signin-email">email: </label>
+  <input id="signin-email" type="email" placeholder="Enter your email" required/>
+  <label for="signin-pwd">password: </label>
+  <input id="signin-pwd" type="password" placeholder="Enter your password" required/>
+  <button type="submit">SignUp</button>
+</form>
+
+
 <button (click)="signin()">signin with google</button>
+
+
+
+
 <div *ngIf="profile$ | async as profile">
   <img [src]="profile.photoURL"/>
   <p>Hi, {{ profile.displayName }}</p>
