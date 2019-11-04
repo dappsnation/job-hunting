@@ -1,8 +1,8 @@
-<form (ngSubmit)="signup()">
+<form [formGroup]="form" (ngSubmit)="signup()">
   <label for="signin-email">email: </label>
-  <input id="signin-email" type="email" placeholder="Enter your email" required/>
+  <input id="signin-email" type="email" placeholder="Enter your email" required formControlName="email"/>
   <label for="signin-pwd">password: </label>
-  <input id="signin-pwd" type="password" placeholder="Enter your password" required/>
+  <input id="signin-pwd" type="password" placeholder="Enter your password" required formControlName="password"/>
   <button type="submit">SignUp</button>
 </form>
 
