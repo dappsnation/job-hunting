@@ -3,6 +3,7 @@ import { AuthService } from '../state/auth.service';
 import { Observable } from 'rxjs';
 import { Profile } from '../state/auth.store';
 import { AuthQuery } from '../state/auth.query';
+import { NgForm, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-signin',
@@ -11,6 +12,11 @@ import { AuthQuery } from '../state/auth.query';
 })
 export class SigninComponent implements OnInit {
   profile$: Observable<Profile>;
+  form = new FormGroup({
+    email: new FormControl(),
+    password: new FormControl()
+  });
+
   constructor(private service: AuthService, private query: AuthQuery) { }
 
   ngOnInit() {
@@ -24,6 +30,11 @@ export class SigninComponent implements OnInit {
 
   signout() {
     this.service.signOut();
+  }
+
+  signup() {
+    const { email, password } = this.form.value;
+    this.service.signup(email, password);
   }
 
 }
