@@ -6,13 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
-import { SigninComponent } from './auth/signin/signin.component';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, SigninComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,12 +23,16 @@ import { AngularFireModule } from '@angular/fire';
     RouterModule.forRoot([
       {
         path: '',
-        redirectTo: 'signin',
+        redirectTo: 'home',
         pathMatch: 'full'
       },
       {
-        path: 'signin',
-        component: SigninComponent
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: 'auth',
+        loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
       }
     ])
   ],
