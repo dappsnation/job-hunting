@@ -5,6 +5,8 @@ import { FireAuthState, initialAuthState } from 'akita-ng-fire';
 export interface Profile {
   displayName: string;
   photoURL: string;
+  email: string;
+  verified: boolean;
 }
 
 export interface AuthState extends FireAuthState<Profile> {}
