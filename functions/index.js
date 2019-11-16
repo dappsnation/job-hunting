@@ -17,42 +17,46 @@ const mailTransport = nodemailer.createTransport({
 
 const APP_NAME = 'Job hunting emails';
 
-// [START sendWelcomeEmail to a new user]
-// [START onCreateTrigger]
+// [sendWelcomeEmail to a new user]
 exports.sendWelcomeEmail = functions.auth.user().onCreate(user => {
-  // [END onCreateTrigger]
-  // [START eventAttributes]
   const email = user.email;
   const displayName = user.displayName;
-  // [END eventAttributes]
   return sendWelcomeEmail(email, displayName);
 });
-// [END sendWelcomeEmail]
 
-// [START sendByeEmail to users who delete their accounts]
-// [START onDeleteTrigger]
+// [sendByeEmail to users who delete their accounts]
 exports.sendByeEmail = functions.auth.user().onDelete(user => {
-  // [END onDeleteTrigger]
   const email = user.email;
   const displayName = user.displayName;
   return sendGoodbyeEmail(email, displayName);
 });
-// [END sendByeEmail]
 
 // Sends a welcome email to the given user.
 async function sendWelcomeEmail(email, displayName) {
   const mailOptions = {
-    from: `${APP_NAME} <noreply@firebase.com>`,
-    to: email
+    from: `${APP_NAME} <jubhunting.test@gmail.com>`,
+    to: email,
+    subject = `Welcome to ${APP_NAME}!`,
+    text = `Hey ${displayName ||
+       ''}! Welcome to ${APP_NAME}. We hope you will enjoy our service.`
   };
+  await mailTransport.sendMail(mailOptions);
+  console.log('New welcome email sent to:', email);
+  return null;
 }
 
 // Sends a goodbye email to the given user.
 async function sendGoodbyeEmail(email, displayName) {
   const mailOptions = {
-    from: `${APP_NAME} <noreply@firebase.com>`,
-    to: email
+    from: `${APP_NAME} <jubhunting.test@gmail.com>`,
+    to: email,
+    subject = `Bye!`,
+    text = `Hey ${displayName ||
+      ''}!, We confirm that we have deleted your ${APP_NAME} account.`
   };
+  await mailTransport.sendMail(mailOptions);
+  console.log('Account deletion confirmation email sent to:', email);
+  return null;
 }
 
 // Credentials:
