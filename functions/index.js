@@ -32,13 +32,12 @@ exports.sendByeEmail = functions.auth.user().onDelete(user => {
 });
 
 // Sends a welcome email to the given user.
-async function sendWelcomeEmail(email, displayName) {
+async function sendWelcomeEmail(email, displayName = '') {
   const mailOptions = {
     from: `${APP_NAME} <jubhunting.test@gmail.com>`,
     to: email,
-    subject = `Welcome to ${APP_NAME}!`,
-    text = `Hey ${displayName ||
-       ''}! Welcome to ${APP_NAME}. We hope you will enjoy our service.`
+    subject: `Welcome to ${APP_NAME}!`,
+    text: `Hey ${displayName}! Welcome to ${APP_NAME}. We hope you will enjoy our service.`
   };
   await mailTransport.sendMail(mailOptions);
   console.log('New welcome email sent to:', email);
@@ -46,13 +45,12 @@ async function sendWelcomeEmail(email, displayName) {
 }
 
 // Sends a goodbye email to the given user.
-async function sendGoodbyeEmail(email, displayName) {
+async function sendGoodbyeEmail(email, displayName = '') {
   const mailOptions = {
     from: `${APP_NAME} <jubhunting.test@gmail.com>`,
     to: email,
-    subject = `Bye!`,
-    text = `Hey ${displayName ||
-      ''}!, We confirm that we have deleted your ${APP_NAME} account.`
+    subject: `Bye!`,
+    text: `Hey ${displayName}!, We confirm that we have deleted your ${APP_NAME} account.`
   };
   await mailTransport.sendMail(mailOptions);
   console.log('Account deletion confirmation email sent to:', email);
