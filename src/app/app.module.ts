@@ -33,6 +33,10 @@ import { HomeComponent } from './home/home.component';
       {
         path: 'auth',
         loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+      },
+      {
+        path: 'job',
+        loadChildren: () => import('./job/job.module').then(m => m.JobModule)
       }
     ])
   ],

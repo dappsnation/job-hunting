@@ -27,7 +27,7 @@
     "@capacitor/cli": "^1.2.1",
     "@capacitor/core": "^1.2.1",
     "@datorama/akita": "^4.10.8",
-    "akita-ng-fire": "^2.0.0-alpha.1",
+    "akita-ng-fire": "^2.0.0-alpha.6",
     "firebase": ">= 5.5.7 <7",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.5.3",
