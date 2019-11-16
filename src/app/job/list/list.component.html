@@ -1,8 +1,11 @@
 <mat-sidenav-container>
   <mat-sidenav-content>
     content
+    <mat-nav-list dense>
+      <a mat-list-item routerLink="1" routerLinkActive="list-item-active">1</a>
+    </mat-nav-list>
   </mat-sidenav-content>
-  <mat-sidenav position="end">
-    sidenav
+  <mat-sidenav mode="side" position="end" opened>
+   <router-outlet></router-outlet>
   </mat-sidenav>
 </mat-sidenav-container>
