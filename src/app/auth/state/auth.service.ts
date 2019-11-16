@@ -12,7 +12,6 @@ export class AuthService extends FireAuthService<AuthState> {
   }
 
   createProfile(user: User) {
-    console.log('user: ', user)
     return {
       displayName: user.displayName,
       photoURL: user.photoURL,
