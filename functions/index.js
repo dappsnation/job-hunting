@@ -57,6 +57,3 @@ async function sendGoodbyeEmail(email, displayName = '') {
   return null;
 }
 
-// Credentials:
-// jubhunting.test@gmail.com
-// jobhuntingberlin19
