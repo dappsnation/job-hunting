@@ -1,3 +1,8 @@
 <p>edit works!</p>
 <input #title type="text" placeholder="job title" />
 <button (click)="save(title.value)">create job offer</button>
+
+<ng-container *ngIf="job$ | async as job">
+    <p>title: {{job.title}}</p>
+    <p>createdBy: {{job.createdBy}}</p>
+  </ng-container>
