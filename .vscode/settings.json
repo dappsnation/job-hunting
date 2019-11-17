@@ -1,3 +1,7 @@
 {
-    "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "editor.insertSpaces": true,
+  "editor.trimAutoWhitespace": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
 }
