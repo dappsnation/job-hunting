@@ -1,1 +1,4 @@
-<p>view works!</p>
+<ng-container *ngIf="job$ | async as job">
+  <p>title: {{job.title}}</p>
+  <p>createdBy: {{job.createdBy}}</p>
+</ng-container>

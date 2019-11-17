@@ -5,7 +5,9 @@
       <a routerLink="create">create new job offer</a>
     </header>
     <mat-nav-list dense>
-      <a mat-list-item routerLink="1" routerLinkActive="list-item-active">1</a>
+      <ng-container *ngFor="let job of joblist | async">
+        <a mat-list-item [routerLink]="job.id" routerLinkActive="list-item-active">{{job.title}}</a>
+      </ng-container>
     </mat-nav-list>
   </mat-sidenav-content>
   <mat-sidenav mode="side" position="end" opened>
