@@ -1564,12 +1564,10 @@ ajv@^5.0.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-akita-ng-fire@^2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/akita-ng-fire/-/akita-ng-fire-2.0.0-alpha.1.tgz#2da8259e63d167a2561bcfe733379fc00206d72c"
-  integrity sha512-Hrfs/gW12wzOq2XvMwRXyYstbca1h+d3Jtx82InLAGZxlZHb1SguegZlxnF6n2uz2jOczsXt2vsDr3jht2+Qjg==
-  dependencies:
-    tslib "^1.9.0"
+akita-ng-fire@^2.0.0-alpha.6:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/akita-ng-fire/-/akita-ng-fire-2.0.4.tgz#690884e72401909392e972b49f60c53253658212"
+  integrity sha512-SGD4F3d4gGFI/GV1whXdPyr2Oz+Teve9By9gQXVTheML1aBBq5dlV9UO/jvUIpiouXDcpBvelF4WlWxaeW9KCg==
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -4759,9 +4757,9 @@ home-dir@^1.0.0:
   integrity sha1-KRfrRL3JByztqUJXlUOEfjAX/k4=
 
 hosted-git-info@^2.1.4, hosted-git-info@^2.7.1:
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.5.tgz#759cfcf2c4d156ade59b0b2dfabddc42a6b9c70c"
-  integrity sha512-kssjab8CvdXfcXMXVcvsXum4Hwdq9XGtRD3TteMEvEbq0LXyiNQr6AprqKqfeaDXze7SxWvRxdpwE6ku7ikLkg==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 hpack.js@^2.1.6:
   version "2.1.6"
