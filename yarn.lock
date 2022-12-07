@@ -1564,12 +1564,10 @@ ajv@^5.0.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-akita-ng-fire@^2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/akita-ng-fire/-/akita-ng-fire-2.0.0-alpha.1.tgz#2da8259e63d167a2561bcfe733379fc00206d72c"
-  integrity sha512-Hrfs/gW12wzOq2XvMwRXyYstbca1h+d3Jtx82InLAGZxlZHb1SguegZlxnF6n2uz2jOczsXt2vsDr3jht2+Qjg==
-  dependencies:
-    tslib "^1.9.0"
+akita-ng-fire@^2.0.0-alpha.6:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/akita-ng-fire/-/akita-ng-fire-2.0.4.tgz#690884e72401909392e972b49f60c53253658212"
+  integrity sha512-SGD4F3d4gGFI/GV1whXdPyr2Oz+Teve9By9gQXVTheML1aBBq5dlV9UO/jvUIpiouXDcpBvelF4WlWxaeW9KCg==
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -7657,9 +7655,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
-  integrity sha1-E+JtKK1rD/qpExLNO/cI7TUecjM=
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.1.tgz#2bad97710a5b661c366b378b1e3a44a592ff45e6"
+  integrity sha512-LQy1Q1fcva/UsnP/6Iaa4lVeM49WiOitu2T4hZCyA/elLKu37L99qcBJk4VCCk+rdLvnMzfKyiN3SZTqdAZGSQ==
 
 qs@~6.5.2:
   version "6.5.2"
